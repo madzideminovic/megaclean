@@ -1,5 +1,16 @@
-.top-bar{
+body{
+    font-family: 'Poppins';
+}
+
+.top-bar-bcg{
     width: 100%;
+    background-color: #87C159;
+}
+.top-bar{
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 90%;
+    height: 80px;
    background-color: #87C159;
    color: #fff;
     padding: 5px 0 15px 0;
@@ -9,8 +20,6 @@
 .top-bar-info{
     display: flex;
     width: 60%;
-    text-align: left;
-    padding: 0 15px;
 }
 
 .top-bar-social-media{
@@ -19,10 +28,86 @@
     justify-content: flex-end;
 }
 
-.navbar-edit{
-    position: fixed;
-    width: 60%;
-    top: 50px;
-    height: 72px;
-    border-radius: 5px;
+.top-bar .top-bar-info .info i{
+    font-size: 15px;
+    color: #058240;
 }
+
+.top-bar .top-bar-info .info span{
+    font-size: 13px;
+    padding-right: 20px;
+}
+
+.top-bar .top-bar-social-media .icon{
+    padding-left: 15px;
+    font-size: 15px;
+    padding-top: 3px;
+}
+
+.top-bar .top-bar-social-media .icon:hover{
+    color: #058240;
+    transition: .2s;
+}
+/* .menu-cont{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    transition: .5s ease-in-out;
+} */
+/* .navbar-edit {
+    display: flex;
+    position: fixed;
+    left: 19%;
+    top: 7%;
+    transform: translate(5%,-19%);
+    width: 57%;
+    height: 85px;
+    border-radius: 5px;
+    z-index: 10;
+    justify-content: space-between;
+} */
+header .menu-cont .inner {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    background-color: #fff;
+    padding: 0 30px 0 16px;
+    z-index: 99999;
+    border-radius: 5px;
+    transform: translate3d(-50%, -50%, 0);
+}
+.navbar-edit {
+    width: 1170px;
+    height: 80px;
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: #fff !important;
+}
+
+.contact{
+    padding: 10px 15px;
+    background-color: #87C159;
+    border-radius: 10px;
+    font-size: 13px;
+    color:#fff;
+}
+
+
+.contact:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #058240;
+}
+
+.nav-item:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #87C159;  
+    transform: scaleX(0);  
+    transition: transform 300ms ease-in-out;
+  }
+  .nav-item:hover:after { transform: scaleX(1); }
+  .nav-item.fromLeft:after{  transform-origin:  0% 50%; }
