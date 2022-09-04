@@ -1,53 +1,56 @@
-body{
+body {
     font-family: 'Poppins';
 }
 
-.top-bar-bcg{
+.top-bar-bcg {
     width: 100%;
     background-color: #87C159;
 }
-.top-bar{
+
+.top-bar {
     width: 1170px;
     margin: 0 auto;
     max-width: 90%;
     height: 80px;
-   background-color: #87C159;
-   color: #fff;
+    background-color: #87C159;
+    color: #fff;
     padding: 5px 0 15px 0;
-    display: flex   ;
+    display: flex;
 }
 
-.top-bar-info{
+.top-bar-info {
+    padding-top: 5PX;
     display: flex;
     width: 60%;
 }
 
-.top-bar-social-media{
+.top-bar-social-media {
     display: flex;
     width: 40%;
     justify-content: flex-end;
 }
 
-.top-bar .top-bar-info .info i{
+.top-bar .top-bar-info .info i {
     font-size: 15px;
     color: #058240;
 }
 
-.top-bar .top-bar-info .info span{
+.top-bar .top-bar-info .info span {
     font-size: 13px;
     padding-right: 20px;
 }
 
-.top-bar .top-bar-social-media .icon{
+.top-bar .top-bar-social-media .icon {
     padding-left: 15px;
     font-size: 15px;
     padding-top: 3px;
 }
 
-.top-bar .top-bar-social-media .icon:hover{
+.top-bar .top-bar-social-media .icon:hover {
     color: #058240;
     transition: .2s;
 }
+
 /* .menu-cont{
     position: fixed;
     top: 30px;
@@ -77,37 +80,155 @@ header .menu-cont .inner {
     padding: 0 30px 0 16px;
     z-index: 99999;
     border-radius: 5px;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -35%, 0);
 }
+
 .navbar-edit {
     width: 1170px;
-    height: 80px;
+    height: auto;
     margin: 0 auto;
     max-width: 90%;
     background-color: #fff !important;
 }
 
-.contact{
+.contact {
     padding: 10px 15px;
     background-color: #87C159;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 13px;
-    color:#fff;
+    color: #fff;
 }
 
 
-.contact:hover{
+.contact:hover {
     color: #fff;
     text-decoration: none;
     background-color: #058240;
+    transition: .3s;
 }
 
 .nav-item:after {
-    display:block;
+    display: block;
     content: '';
-    border-bottom: solid 3px #87C159;  
-    transform: scaleX(0);  
+    border-bottom: solid 3px #87C159;
+    transform: scaleX(0);
     transition: transform 300ms ease-in-out;
-  }
-  .nav-item:hover:after { transform: scaleX(1); }
-  .nav-item.fromLeft:after{  transform-origin:  0% 50%; }
+}
+
+.nav-item:hover:after {
+    transform: scaleX(1);
+}
+
+.nav-item.fromLeft:after {
+    transform-origin: 0% 50%;
+}
+
+.first-slide {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    text-align: center;
+    color: #fff;
+}
+
+.first-slide h3 {
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #e2e2ee;
+}
+
+.first-slide h1 {
+    font-size: 60px;
+}
+
+.first-slide a.contact {
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.second-slide {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    text-align: center;
+    color: #fff;
+}
+
+
+.second-slide h1 {
+    font-size: 60px;
+}
+
+.second-slide a.contact {
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.third-slide {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    text-align: center;
+    color: #fff;
+}
+
+.third-slide h3 {
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #e2e2ee;
+}
+
+
+.third-slide h1 {
+    font-size: 60px;
+}
+
+.third-slide a.contact {
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.about-us {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 90%;
+    color: #fff;
+    padding: 5px 0 15px 0;
+    display: flex;
+    position: relative;
+}
+
+
+.about-us-inner {
+    z-index: 1;
+    height: auto;
+    background-color: #fff;
+    color: #7f8c8d;
+    padding: 0;
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 50%);
+}
+
+.about-us-image{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 35%;    
+}
+
+.about-us-info {
+    text-align: justify;
+    margin-top: 40px;
+    padding: 15px;
+}
+
+.about-us-info h2{
+    text-align: center !important;
+    padding: 10px 0;
+}
+
+.about-us-info p{
+    padding: 0 25px ;
+}
